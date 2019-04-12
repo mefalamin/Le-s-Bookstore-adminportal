@@ -31,6 +31,9 @@ public class Book {
     private String description;
     private int inStockNumber;
 
+    @Transient
+    private MultipartFile bookImage;
+
     public Long getId() {
         return id;
     }
@@ -167,7 +170,7 @@ public class Book {
         this.bookImage = bookImage;
     }
 
-    private MultipartFile bookImage;
+
 
 
 }
