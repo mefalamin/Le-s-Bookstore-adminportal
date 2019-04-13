@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 /**
  * created by saikat on 4/13/19
@@ -59,7 +60,8 @@ public class BookController {
     @RequestMapping("/bookList")
     public String bookList(Model model){
 
-
+        List<Book> bookList = bookService.findAll();
+        model.addAttribute("bookList",bookList);
         return "bookList";
     }
 

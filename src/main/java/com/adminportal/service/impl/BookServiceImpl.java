@@ -5,6 +5,8 @@ import com.adminportal.repository.BookRepository;
 import com.adminportal.service.BookService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * created by saikat on 4/13/19
  */
@@ -20,5 +22,10 @@ public class BookServiceImpl implements BookService {
     @Override
     public Book save(Book book) {
        return bookRepository.save(book);
+    }
+
+    @Override
+    public List<Book> findAll() {
+        return bookRepository.findAll();
     }
 }
