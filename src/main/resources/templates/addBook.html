@@ -13,7 +13,6 @@
 
         <form class="form-horizontal" th:action="@{/book/add}" method="post" enctype="multipart/form-data">
             <fieldset>
-
                 <legend  class="center-block">New Book Information
                     <span style="font-size: small">* is required</span>
                 </legend>
@@ -115,7 +114,7 @@
                 </div>
                 <!--isbn-->
                 <div class="form-group">
-                    <label  class="col-md-3 control-label" for="isbn">isbn</label>
+                    <label  class="col-md-3 control-label" for="isbn">ISBN</label>
                     <div class="col-md-7">
                         <input type="text" class="form-control" id="isbn" name="isbn" placeholder="isbn"
                                th:value="${book.isbn}" required="required" />
