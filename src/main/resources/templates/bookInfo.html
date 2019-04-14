@@ -40,9 +40,9 @@
                 <div class="col-xs-6">
                     <p><strong>Format: </strong><span th:text="${book.format}"></span> </p>
                     <p><strong>ISBN: </strong><span th:text="${book.isbn}"></span> </p>
-                    <p><strong>Shipping Weight: </strong><span th:text="${book.shippingWeight}"></span> </p>
-                    <p><strong>List Price: </strong><span th:text="${book.listPrice}"></span> </p>
-                    <p><strong>Our Price: </strong><span th:text="${book.ourPrice}"></span> </p>
+                    <p><strong>Shipping Weight: </strong><span th:text="${book.shippingWeight}"></span>gm</p>
+                    <p><strong>List Price: </strong>$<span  th:text="${book.listPrice}"></span> </p>
+                    <p><strong>Our Price: </strong><span style="color: #d43f3a" th:text="'$'+${book.ourPrice}"></span> </p>
                     <p><strong>Number in Stock: </strong><span th:text="${book.inStockNumber}"></span></p>
                 </div>
             </div>
